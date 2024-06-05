@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div{
+        padding-top: 200px;
+       
+    }
+    form{
+        padding-left: 900px;
+    }
+
+    
+  </style>
+  <body>
+    <div>
+        <center>
+      <img
+        id="k"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTlT3qKLG-WIqkSw3gNVd5oL29QtHlBOV5Q&s" width="500px" height="500px"
+      />
+    </center>
+    </div>
+    <form action="">
+      Pani Puri<input id="p" type="radio" name="gender" value="Pani" /> Bhel
+      Puri <input id="b" type="radio" name="gender" value="Bhel" />
+    </form>
+
+    <script>
+      var id1 = document.getElementById("k");
+      id1.style.border="5px solid black";
+      id1.style.borderRadius="50px"
+
+      var id2 = document.getElementById("p");
+
+      id2.addEventListener("click", hi);
+      function hi() {
+        id1.setAttribute(
+          "src",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIxn8LH4cgH3IDjcbq8FtdgOjzrD8yAt4PQ&s"
+        );
+        id1.style.border="2px solid red"
+        
+
+      }
+      var id3 = document.getElementById("b");
+
+      id3.addEventListener("click", hi1);
+      function hi1() {
+        id1.setAttribute(
+          "src",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE1mRE3JYc7Mr1DuN4aMulljUbekZWX49Y6w&s"
+        );
+        id1.style.border="2px solid green"
+
+
+      }
+    </script>
+  </body>
+</html>

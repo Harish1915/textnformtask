@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p{
+      height: 200px;
+      width: 200px;
+      border: 2px solid black;
+      text-align: center;
+      padding-top: 20px;
+    }
+  </style>
+  <body>
+    <h1>CLICK ME <--- U CAN</h1>
+    <p>IM WATCHING YOU <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-66fmI62KbjRb5OfalTql4g3eDfKVTgUUMJpWJo9VuJ20erRN012ZKUL-vjue_g5sjAA&usqp=CAU" alt="" height="150px"></p>
+
+    <h1>single click :- RED<br> Double click:-GREEN</h1>
+
+    <script>
+      var A= document.getElementsByTagName("h1");
+      A[0].addEventListener("click",clr)
+
+           function clr() {
+          var B = document.getElementsByTagName("p");
+          B[0].style.backgroundColor = "red";
+        }
+        A[0].addEventListener("dblclick",clr2);
+        function clr2(){
+          var C = document.getElementsByTagName("p")
+          C[0].style.backgroundColor="green"
+        }
+      
+       
+
+
+
+     
+    </script>
+  </body>
+</html>
